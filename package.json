@@ -1,6 +1,6 @@
 {
   "name": "back-top",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple disappearing back-to-top button. No dependencies, ES2015-ready.",
   "keywords": [],
   "homepage": "https://github.com/RyanZim/back-top#readme",
