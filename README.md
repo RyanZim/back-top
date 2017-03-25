@@ -6,6 +6,19 @@ No dependencies, ES2015-ready.
 
 Comes with almost no styling, allowing you to style it yourself.
 
+---
+
+**Note:** This library does not include smooth scrolling.
+
+You can use `scroll-behavior`, but this does not yet have wide browser support. http://caniuse.com/#feat=css-scroll-behavior
+```css
+body {
+  scroll-behavior: smooth;
+}
+```
+
+Alternately, you can use something like https://github.com/tsuyoshiwada/sweet-scroll.
+
 ## Installation
 
 ```bash
@@ -29,7 +42,7 @@ var backTop = require('back-top');
 
 ## Usage
 
-`back-top` must be manually initialized.
+`backTop` must be manually initialized.
 
 ```js
 // Basic Usage:
