@@ -1,0 +1,23 @@
+{
+  "name": "back-top",
+  "version": "0.0.0",
+  "description": "Simple disappearing back-to-top button. No dependencies, ES2015-ready.",
+  "keywords": [],
+  "homepage": "https://github.com/RyanZim/back-top#readme",
+  "bugs": "https://github.com/RyanZim/back-top/issues",
+  "license": "ISC",
+  "author": "Ryan Zimmerman <opensrc@ryanzim.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanZim/back-top.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "devDependencies": {
+    "rollup": "^0.41.6",
+    "rollup-watch": "^3.2.2"
+  }
+}
