@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>backTop Example Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/hack@0.8.1/dist/hack.css" />
     <style>
     body {
       scroll-behavior: smooth;
@@ -25,13 +25,10 @@ body {
   scroll-behavior: smooth;
 }
 </pre>
-      <p>This page also uses <a href="http://getbootstrap.com">Bootstrap</a>.</p>
+      <p>This page also uses <a href="https://hackcss.egoist.moe/">hack.css</a>.</p>
       <h2>JS:</h2>
       <pre>
-backTop({
-  innerHTML: '&lt;span class="glyphicon glyphicon-arrow-up"&gt;&lt;/span&gt;',
-  className: 'btn btn-default',
-});
+backTop();
 </pre>
       <hr />
       <p><strong>Some content:</strong></p>
@@ -54,10 +51,7 @@ backTop({
     </main>
     <script src="index.js"></script>
     <script>
-    backTop({
-      innerHTML: '<span class="glyphicon glyphicon-arrow-up"></span>',
-      className: 'btn btn-default',
-    });
+    backTop();
     </script>
   </body>
 </html>
