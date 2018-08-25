@@ -18,7 +18,7 @@
     "build": "rollup -c",
     "watch": "rollup -c -w",
     "format": "prettier --write README.md src/index.js rollup.config.js",
-    "preversion": "npm run build && cpy dist/index.js docs",
+    "preversion": "npm run build && cpy dist/index.js docs && git add docs/index.js",
     "prepublish": "npm run build"
   },
   "devDependencies": {
