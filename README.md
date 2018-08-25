@@ -75,6 +75,10 @@ backTop({
   - `duration` (Number) Time, in milliseconds, that the transition should take. Default is `800`.
   - `timingFunction` (String) A valid CSS [`<single-transition-timing-function>`](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function) string. Default is `linear`.
 
+## Browser Support
+
+Should support IE10+ and all modern browsers.
+
 ## License
 
 [ISC](LICENSE)
