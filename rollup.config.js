@@ -3,9 +3,7 @@ import babelrc from 'babelrc-rollup';
 
 export default {
   entry: 'src/index.js',
-  plugins: [
-    babel(babelrc()),
-  ],
+  plugins: [babel(babelrc())],
   sourceMap: true,
   moduleName: 'backTop',
   targets: [

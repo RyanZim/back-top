@@ -27,16 +27,19 @@ npm install back-top
 ```
 
 **ES2015:**
+
 ```js
 import backTop from 'back-top';
 ```
 
 **CommonJS:**
+
 ```js
 var backTop = require('back-top');
 ```
 
 **Browser Globals:**
+
 ```html
 <script src="path/to/back-top.js"></script>
 ```

@@ -17,6 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "watch": "rollup -c -w",
+    "format": "prettier --write README.md src/index.js rollup.config.js",
     "preversion": "npm run build && cpy dist/index.js docs",
     "prepublish": "npm run build"
   },
@@ -25,8 +26,13 @@
     "babel-preset-latest": "^6.24.0",
     "babelrc-rollup": "^3.0.0",
     "cpy-cli": "^1.0.1",
+    "prettier": "^1.14.2",
     "rollup": "^0.41.6",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-watch": "^3.2.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }
