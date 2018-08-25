@@ -18,7 +18,10 @@ function backTop() {
   backTop.style.position = 'fixed';
   backTop.style.right = opts.offset;
   backTop.style.bottom = '-100px';
-  backTop.style.transition = 'bottom 800ms';
+  backTop.style['transition-property'] = 'bottom';
+  if (!opts.transition) opts.transition = {};
+  backTop.style['transition-duration'] = (opts.transition.duration || 800) + 'ms';
+  backTop.style['transition-timing-function'] = opts.transition.timingFunction || 'linear';
 
   window.addEventListener('scroll', function () {
     if (window.pageYOffset < 100) backTop.style.bottom = '-100px';else backTop.style.bottom = opts.offset;
@@ -27,7 +30,7 @@ function backTop() {
   backTop.addEventListener('click', function (e) {
     window.scroll(0, 0);
     // Remove hash from URL:
-    history.pushState("", document.title, window.location.pathname + window.location.search);
+    history.pushState('', document.title, window.location.pathname + window.location.search);
     e.preventDefault();
   });
 
