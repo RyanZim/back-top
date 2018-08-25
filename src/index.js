@@ -10,7 +10,10 @@ export default function backTop (opts = {}) {
   backTop.style.position = 'fixed';
   backTop.style.right = opts.offset;
   backTop.style.bottom = '-100px';
-  backTop.style.transition = `bottom 800ms`;
+  backTop.style['transition-property'] = 'bottom';
+  if (!opts.transition) opts.transition = {}
+  backTop.style['transition-duration'] = `${opts.transition.duration || 800}ms`;
+  backTop.style['transition-timing-function'] = opts.transition.timingFunction || 'linear'
 
   window.addEventListener('scroll', () => {
     if (window.pageYOffset < 100) backTop.style.bottom = '-100px';

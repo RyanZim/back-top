@@ -55,6 +55,10 @@ backTop({
   id: 'backToTop',
   className: 'btn btn-secondary',
   offset: '5px',
+  transition: {
+    duration: 1000,
+    timingFunction: 'ease',
+  },
 });
 ```
 
@@ -64,6 +68,9 @@ backTop({
 - `id` (String) Set the id of the button. By default, no `id` is set.
 - `className` (String) Set the class name (or space-separated list of class names) to apply to the button. By default, none are set.
 - `offset` (String) Distance from bottom-right to absolutely position the button. Default is `1rem`.
+- `transition` (Object) Settings related to the CSS transition of moving the button on and off the screen.
+  - `duration` (Number) Time, in milliseconds, that the transition should take. Default is `800`.
+  - `timingFunction` (String) A valid CSS [`<single-transition-timing-function>`](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function) string. Default is `linear`.
 
 ## License
 
